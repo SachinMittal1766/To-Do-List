@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DO List </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="logo">
+      <img src="img/Logo1.png" alt="">
+    </div>
+
+    <div class="wrapper">
+        <header>To Do List</header>
+        <div class="inputField">
+          <input type="text" placeholder="Add your new todo">
+          <button><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+        </div>
+        <ul class="todoList">
+          <!-- data are comes from local storage -->
+          <li>Do Assignment</li>
+          <li>Done Assignment<span class="icon"><i class="fa fa-address-book" aria-hidden="true"></i></span></li>
+          <li>Do Assignment<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+          <li>Do Assignment<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+          <li>Do Assignment<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        </ul>
+        <div class="footer">
+          <span>You have <span class="pendingTasks"></span> pending tasks</span>
+          <button>Clear All</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
